@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - tell us about the number
+ * main - tell us about the input number
  *
- * REturn: always (0)
+ * Return: always (0)
  *
  */
 int main(void)
