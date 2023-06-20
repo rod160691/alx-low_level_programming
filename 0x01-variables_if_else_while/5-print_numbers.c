@@ -9,9 +9,10 @@ int main(void)
 {
 	int base_ten = 0;
 
-	while (base_ten <= 10)
+	while (base_ten <= 9)
 	{
-		putchar(base_ten);
+		char digit = base_ten + '0';
+		putchar(digit);
 		base_ten++;
 	}
 	putchar('\n');
