@@ -11,8 +11,7 @@ int main(void)
 
 	while (base_ten <= 9)
 	{
-		char digit = base_ten + '0';
-		putchar(digit);
+		putchar(base_ten);
 		base_ten++;
 	}
 	putchar('\n');
