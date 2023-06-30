@@ -1,42 +1,32 @@
 #include <stdio.h>
+
 /**
- * main - prints alphabets in lowecase
- *
- * Return: Always 0 (success)
- *
+ * main - prints all possible different combinations of three digits
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int num1, num2, num3;
-	num1 = '0';
-	num2 = '0';
-	num3 = '0';
+	int n, m, l;
 
-	while (num1 <= '9')
+	for (n = 48; n < 58; n++)
 	{
-		while (num2 <= '9')
+		for (m = 49; m < 58; m++)
 		{
-			num3 = '0';
-			while (num3 <= '9')
+			for (l = 50; l < 58; l++)
 			{
-				if (num1 < num2 && num2  < num3)
+				if (l > m && m > n)
 				{
-					putchar(num1);
-					putchar(num2);
-					putchar(num3);
-
-					if (num1 != '7')
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-				num3++;
 			}
-			num2++;
 		}
-		num1++;
-		num2 = '0';
 	}
 	putchar('\n');
 	return (0);
