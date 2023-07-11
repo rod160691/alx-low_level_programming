@@ -1,2 +1,4 @@
 quote
 main.c
+*.o
+*.c
